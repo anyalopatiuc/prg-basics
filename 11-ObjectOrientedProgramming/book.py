@@ -1,11 +1,16 @@
 # class definition
+##The Book class, available in the book.py file, contains a collection of attributes and methods describing a book.
+#  Make changes so that the class also includes information about the book's price, which can be specified when it is created (specify a price of 48). 
+# Print the price information along with other printed data.
 class Book():
-    def __init__(self,title,author,pages):
+    def __init__(self,title,author,pages, price):
         self.title = title
         self.author = author
         self.pages = pages
         self.current_page = 1
         self.is_open = False
+        self.price = 48
+        
 
     def open(self):
         self.is_open = True
@@ -15,6 +20,9 @@ class Book():
     
     def change_page(self,page):
         self.current_page = page
+
+    def change_price(self,price):
+        self.price = 
 
     def display_info(self):
         print(f"My favourite book is {self.title}.")
